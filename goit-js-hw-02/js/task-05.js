@@ -2,7 +2,7 @@
 
 const checkForSpam = function (message) {
   let text = message.toLowerCase();
-  return text.indexOf('sale') !== -1 || text.indexOf('spam') !== -1;
+  return text.includes('sale') || text.includes('spam');
 };
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
