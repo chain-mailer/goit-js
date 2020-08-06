@@ -1,19 +1,12 @@
 'use strict';
 
 const findBestEmployee = function (employees) {
-  const emloyeesValue = Object.values(employees);
+  const employeeValue = Object.entries(employees);
+  const bestValue = Math.max(...Object.values(employees));
 
-  function Max(arr) {
-    return Math.max(...arr);
-  }
-
-  const maxValue = Max(emloyeesValue);
-  const indexOfMaxValue = emloyeesValue.indexOf(maxValue);
-
-  const emloyeesKey = Object.keys(employees);
-  for (const key of emloyeesKey) {
-    if (emloyeesKey.indexOf(key) === indexOfMaxValue) {
-      return key;
+  for (const bestEmployee of employeeValue) {
+    if (bestEmployee.includes(bestValue)) {
+      return bestEmployee[0];
     }
   }
 };
