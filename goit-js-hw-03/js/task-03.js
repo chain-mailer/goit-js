@@ -1,14 +1,27 @@
 'use strict';
+// 1-й вариант
+// const findBestEmployee = function (employees) {
+//   const bestValue = Math.max(...Object.values(employees));
 
+//   for (const bestEmployee of Object.entries(employees)) {
+//     if (bestEmployee[1] === bestValue) {
+//       return bestEmployee[0];
+//     }
+//   }
+// };
+
+// 2-й вариант
 const findBestEmployee = function (employees) {
-  const employeeValue = Object.entries(employees);
-  const bestValue = Math.max(...Object.values(employees));
+  let bestValue = 0;
+  let bestEmployee = null;
 
-  for (const bestEmployee of employeeValue) {
-    if (bestEmployee.includes(bestValue)) {
-      return bestEmployee[0];
+  for (const [name, salary] of Object.entries(employees)) {
+    if (bestValue < salary) {
+      bestValue = salary;
+      bestEmployee = name;
     }
   }
+  return bestEmployee;
 };
 
 console.log(
