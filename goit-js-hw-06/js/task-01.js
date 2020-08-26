@@ -62,7 +62,7 @@ console.log(getUsersWithAge(users, 30, 40));
 
 const calculateTotalBalance = (users) => {
   let result = 0;
-  users.map((user) => (result += user.balance));
+  users.filter((user) => (result += user.balance));
   return result;
 };
 
