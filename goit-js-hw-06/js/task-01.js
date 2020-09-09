@@ -60,16 +60,7 @@ console.log(getUsersWithAge(users, 30, 40));
 
 // ---------------- Task-07 ----------------
 
-const calculateTotalBalance = (users) => {
-  let result = 0;
-  users.filter((user) => (result += user.balance));
-  return result;
-};
-
-// почему андефайнд выдает?
-// const calculateTotalBalance = (users) => {
-//   users.reduce((total, user) => total + user.balance, 0);
-// };
+const calculateTotalBalance = (users) => users.reduce((totalBalance, user) => totalBalance + user.balance, 0);
 console.log('task-07 result');
 console.log(calculateTotalBalance(users)); // 20916
 
