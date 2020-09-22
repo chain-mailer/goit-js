@@ -1,7 +1,7 @@
 export default [
   {
-    preview: 'https://pixabay.com/get/53e6d1424e4faa0df7c5997cc1283779123cd7e55b_640.jpg',
-    original: 'https://pixabay.com/get/53e6d1424e4fad0bffd89960c62e377e1238dded5557_1280.jpg',
+    preview: 'https://cdn.pixabay.com/photo/2016/05/15/15/12/hepatica-1393813__340.jpg',
+    original: 'https://pixabay.com/get/57e3dc404253af14f6da8c7dda353678153fd9e25751704a_1280.jpg',
     description: 'Hokkaido Flower',
   },
   {
@@ -10,7 +10,7 @@ export default [
     description: 'Container Haulage Freight',
   },
   {
-    preview: 'https://cdn.pixabay.com/photo/2020/08/31/09/33/beach-5531919_640.jpg',
+    preview: 'https://cdn.pixabay.com/photo/2020/08/31/09/33/beach-5531919__340.jpg',
     original: 'https://cdn.pixabay.com/photo/2020/08/31/09/33/beach-5531919_1280.jpg',
     description: 'Aerial Beach View',
   },
